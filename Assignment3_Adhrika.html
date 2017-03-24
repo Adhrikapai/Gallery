@@ -1,0 +1,57 @@
+<!--
+Assignment -3 Image Gallery
+Adhrika Udaylal Pai
+Student no: 991451940
+-->
+
+
+
+<html>
+	<head>
+		<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Assignment3_Adhrika.css">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+    <title>｡◕‿◕｡</title>
+	</head>
+	<body>
+	<div id ="Div" align="middle">
+			<h1>¯\_(ツ)_/¯ STUDENTS</h1>
+					<img class="imgStyle" title="SAKET" alt="Saket Junejaja is one among the best web programmers aka cookie eater" src="saket.jpg" onmouseover="viewImage(event)" onmouseout="after(event)" />
+					<img class="imgStyle" title="JEFF" alt="Jeff-fuh-fuh - the meme creator aka tech savy" src="jeff.jpg" onmouseover="viewImage(event)" onmouseout="after(event)" />
+					<img class="imgStyle" title="PRABHJOT" alt="PJ is the silent speaker aka a beared marvel" src="pj.jpg" onmouseover="viewImage(event)" onmouseout="after(event)" />
+					<img class="imgStyle" title="SNEH" alt="Snake is the sleeping beauty aka help wanted" src="sneh.jpg" onmouseover="viewImage(event)" onmouseout="after(event)" />
+			<br>
+			<br>
+			<br>
+					<img height="80%" width="30%" style ="border:4px solid #F08080" src="saket.jpg" id="main" position="center"/>
+			<h1 id="h1">SAKET</h1>
+			<p id ="p">Saket Junejaja is one among the best web programmers aka cookie eater</p>
+	</div>
+	</body>
+	<script>
+
+				function viewImage(event)
+				{
+						var tar = event.target ;
+
+						if(tar.tagName == "IMG")
+						{
+						document.getElementById("main").src = tar.getAttribute("src");
+						tar.style.borderColor = 'white';
+						document.getElementById("h1").innerHTML = tar.getAttribute("title");
+						document.getElementById("p").innerHTML = tar.getAttribute("alt");
+				 }
+				}
+				function after(event)
+				{
+						var tar = event.target ;
+
+						if(tar.tagName == "IMG")
+						{
+						tar.style.borderColor = 'black';
+				 }
+				}
+
+	</script>
+</html>

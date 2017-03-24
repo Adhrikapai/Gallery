@@ -1,0 +1,37 @@
+/*
+Assignment -3 Image Gallery
+Adhrika Udaylal Pai
+Student no: 991451940
+CSS file
+*/
+
+
+
+
+.imgStyle
+{
+  height:120px;
+  width:120px;
+  border:3px solid black;
+  position:center;
+}
+body
+{
+    background: #F08080;
+    background: -webkit-linear-gradient(#F08080,#FFFACD,#FFFFF0);
+    background: -o-linear-gradient(#F08080,#FFFACD,#FFFFF0);
+    background: -moz-linear-gradient(#F08080,#FFFACD,#FFFFF0);
+    background: linear-gradient(#F08080,#FFFACD,#FFFFF0);
+
+}
+h1{
+  font-family: 'Anton', sans-serif;
+}
+p
+{
+  font-family: 'Londrina Solid', cursive;
+  font-size: 130%;
+}
+h1,p{
+  color: black;
+}
